@@ -23,7 +23,7 @@ conforme al Reglamento General de Protección de Datos (RGPD).
 📋 USO
 -------
 1. Coloca los documentos (.docx o .pdf) dentro de:
-   SecureAnon_Portable\Anon
+   SecureAnon_\Anon
 
 2. Ejecuta:
    ejecutar_SecureAnon.bat
@@ -34,6 +34,14 @@ conforme al Reglamento General de Protección de Datos (RGPD).
 4. Revisa los logs:
    • anon_log.txt  → detalle completo
    • anon_log.csv  → resumen por archivo
+
+   C:\Anon\
+   ├── documento1.docx
+   ├── documento2.pdf
+   ├── limpiar.ps1       ← script principal
+   ├── redactar.py       ← script Python auxiliar
+   └── nombres.txt       ← lista de nombres propios a borrar (uno por línea)
+
 
 🧩 REQUISITOS
 -------------
@@ -57,7 +65,7 @@ Puedes ejecutar SecureAnon desde:
 El sistema trabaja localmente, sin conexión ni envío de datos.
 Cumple los principios RGPD de minimización y privacidad por diseño.
 
-5️⃣ Cómo usarlo
+Cómo usarlo
 -------------------
 Guarda los tres ficheros (limpiar.ps1, redactar.py, nombres.txt) dentro de C:\Anon.
 
@@ -81,7 +89,7 @@ Autor: David Moya García
 Versión: 2.0 Portable
 =======================================
 
-6️⃣ Qué se elimina / sustituye
+Qué se elimina / sustituye
 
 | Tipo de dato                              | Acción                              |
 | ----------------------------------------- | ----------------------------------- |
