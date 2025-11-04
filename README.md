@@ -57,7 +57,37 @@ Puedes ejecutar SecureAnon desde:
 El sistema trabaja localmente, sin conexión ni envío de datos.
 Cumple los principios RGPD de minimización y privacidad por diseño.
 
-Autor: Equipo de Seguridad y Cumplimiento
+5️⃣ Cómo usarlo
+-------------------
+Guarda los tres ficheros (limpiar.ps1, redactar.py, nombres.txt) dentro de C:\Anon.
+
+Copia tus documentos .docx y .pdf dentro de esa carpeta.
+
+Abre PowerShell:
+
+cd C:\Anon
+.\limpiar.ps1
+
+
+Resultado → C:\Anon\Limpios con archivos limpios y redactados.
+Verás mensajes tipo:
+
+✓ Limpio DOCX: contrato.docx
+✓ Redactado contrato.docx
+✓ Limpio PDF: informe.pdf
+✓ Redactado informe.pdf
+
+Autor: David Moya García
 Versión: 2.0 Portable
 =======================================
+
+6️⃣ Qué se elimina / sustituye
+
+| Tipo de dato                              | Acción                              |
+| ----------------------------------------- | ----------------------------------- |
+| Autor, empresa, fechas, software, etc.    | Eliminados (metadatos)              |
+| Correos electrónicos                      | `[REDACTADO]` o bloque negro en PDF |
+| DNIs / NIEs                               | `[REDACTADO]`                       |
+| Teléfonos                                 | `[REDACTADO]`                       |
+| Nombres propios del fichero `nombres.txt` | `[REDACTADO]`                       |
 
