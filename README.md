@@ -43,6 +43,8 @@ conforme al Reglamento General de Protección de Datos (RGPD).
   pikepdf, pymupdf, python-docx
   (el script las instala automáticamente)
 
+  python -m pip install pikepdf pymupdf python-docx
+
 🧠 CONSEJO
 -----------
 Puedes ejecutar SecureAnon desde:
